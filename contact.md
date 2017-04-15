@@ -4,6 +4,6 @@ layout: post
 permalink: /contact/
 ---
 
-May be a contact form.
+Please don't, but if you must, I'm sure you'll find a way.
 
-Email: <a href="mailto:{{site.email}}">{{site.email}}</a>
+If you want to give us money, you can.
