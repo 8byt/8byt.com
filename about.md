@@ -1,13 +1,10 @@
 ---
-title: About Hagura
+title: About
 layout: post
 permalink: /about/
 published: true
 ---
 
-For more themes please visit [https://jekyll-themes.com](https://jekyll-themes.com){: target="_blank"}
+8byt software is the fusion of two great minds, the minds of Danny Wolf and Sam Myers. Together, they form a force formidable even in a day of chaos and node.js. Under their wings are projects that defy logic and reason, and are mostly purely for the fun of it all. Danny is a Massachusetts native, and Sam practically is, with a smattering of California at the beginning of his illustrious career as a person.
 
-Does the theme deserve a star?
-
-<a class="github-button" href="https://github.com/sharu725/hagura" data-style="mega" data-count-href="/sharu725/hagura/stargazers" data-count-api="/repos/sharu725/hagura#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star sharu725/hagura on GitHub">Star</a>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+We don't really know what we're doing, but possibly one day we will actually be good enough to do something worthwhile. It's a long shot, but there's a chance.
