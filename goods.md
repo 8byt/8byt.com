@@ -13,5 +13,5 @@ Feelings-based goods:
 - [~~feelings.cloud~~](http://feelings.cloud) *in progress*
 
 Others:
-- [somebodyoncetold.me](http://somebodyoncetold.me) because [Neil Cicierega](neilcicierega.com)'s music inspires us
+- [somebodyoncetold.me](http://somebodyoncetold.me) because [Neil Cicierega](http://neilcicierega.com)'s music inspires us
 - [~~Dream a Meme Foundation~~](http://dreamameme.org)
