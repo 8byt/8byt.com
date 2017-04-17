@@ -4,7 +4,7 @@ layout: post
 permalink: /goods/
 published: true
 ---
-App concepts:
+Apps:
 - [Bloop: MMO CTF in the real world](http://bloop.website) *currently broken :)*
 
 Feelings-based goods:
