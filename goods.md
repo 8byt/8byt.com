@@ -10,8 +10,7 @@ Apps:
 Feelings-based goods:
 - [feelings.zone](http://feelings.zone)
 - [feelings.solutions](https://feelings.solutions)
-- [~~feelings.cloud~~](http://feelings.cloud) *in progress*
+- [feelings.cloud](http://feelings.cloud) *in progress*
 
 Others:
 - [somebodyoncetold.me](http://somebodyoncetold.me) because [Neil Cicierega](http://neilcicierega.com)'s music inspires us
-- [~~Dream a Meme Foundation~~](http://dreamameme.org)
