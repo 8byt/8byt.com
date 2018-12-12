@@ -5,7 +5,7 @@ permalink: /goods/
 published: true
 ---
 Apps:
-- [Bloop: MMO CTF in the real world](http://bloop.website) *currently broken :)*
+- [Bloop: MMO CTF in the real world](https://github.com/BloopApp) *currently broken :)*
 
 Feelings-based goods:
 - [feelings.zone](http://feelings.zone)
