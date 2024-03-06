@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>8byt</title>
+    <style type="text/css">
+        body {
+            background-color: #70DBFF;
+        }
+
+        #city {
+            position: relative;
+            background-image: url('images/CitygenLarge.png');
+            margin-left: auto;
+            margin-right: auto;
+            width: 512px;
+            height: 512px;
+            margin-top: 50px;
+            margin-bottom: auto;
+        }
+
+        #particle {
+            position: relative;
+            overflow: visible;
+            width: 0px;
+            height: 0px;
+            z-index: -100;
+        }
+
+        #particle1 {
+            width: 8px;
+            height: 8px;
+            z-index: -100;
+            background-color: #38261a;
+        }
+    </style>
+    <script type="text/javascript">
+        // NOTE(danny): This code was written in 2013. I'm leaving it largely unchanged.
+        // Thank you Wayback Machine for saving what I didn't.
+        function init() {
+            px = new Array(0);
+            py = new Array(0);
+            pyf = new Array(0);
+            cur = 0;
+            chance = .99;
+            called = 0;
+            skyrot = 0;
+            setTimeout(animate, 10);
+        }
+        function range(x, low, high) {
+            return Math.max(Math.min(x, high), low);
+        }
+        function fade(r1, g1, b1, r2, g2, b2, x) {
+            return 'rgb(' + Math.round(r2 * x + r1 * (1 - x)) + ',' + Math.round(g2 * x + g1 * (1 - x)) + ',' + Math.round(b2 * x + b1 * (1 - x)) + ')';
+        }
+
+        function animate() {
+            var city = document.getElementById("city");
+            offset = ((Math.cos(cur) + 1) * 25) + 50;
+            city.style.marginTop = offset + "px";
+            cur += (3.14159 / 500);
+            skyrot += .001;
+
+            document.getElementsByTagName("body")[0].style.backgroundColor = fade(0, 174, 255, 25, 0, 30, (Math.sin(skyrot) + 1) / 2);
+
+            if (Math.random() > chance && px.length < 64) {
+                px.push(Math.floor((Math.random() * 56) + 4) * 8);
+                py.push(370);
+                pyf.push(0);
+                var cur1 = px.length - 1;
+            }
+
+            if (px.length > 0) {
+                city.innerHTML = "";
+                for (var i = 0; i < px.length; i++) {
+                    city.innerHTML += "<div id='particle' style='left:" + px[i] + "px; top:" + py[i] + "px; opacity:" + (1 - Math.pow(range(((py[i] / 512)), 0, 1), 10)) + "; z-index:" + (-25 - i) + ";'><div id='particle1'></div></div>";
+                    pyf[i] += .001;
+                    py[i] += pyf[i];
+                    if (py[i] > 512) {
+                        if (i != -1) px.splice(i, 1);
+                        if (i != -1) py.splice(i, 1);
+                        if (i != -1) pyf.splice(i, 1);
+                    }
+                }
+
+            }
+
+            setTimeout(animate, 10);
+        }
+    </script>
+</head>
+
+<body onload="init()">
+    <div id="city"></div>
+</body>
+
+</html>
